@@ -29,3 +29,18 @@ html {
   }
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: $border;
+  background: $light-green;
+  color: $green;
+  cursor: pointer;
+  text-transform: capitalize;
+  &:hover {
+    background: $green;
+    color: $white;
+  }
+}
