@@ -1,0 +1,19 @@
+@import "variables";
+
+@mixin grid($value) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($value));
+  gap: 2rem;
+}
+
+@mixin titleText($titleText) {
+  font-size: $titleText;
+  text-transform: capitalize;
+  color: $black;
+}
+
+@mixin graphText($graphText) {
+  font-size: $graphText;
+  line-height: 1.65;
+  color: $light-color;
+}
