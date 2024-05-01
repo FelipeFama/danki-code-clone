@@ -9,6 +9,15 @@
   padding: 2rem 10%;
   background-color: $white;
   box-shadow: $box-shadow;
+  @media (max-width: 1200px) {
+    padding: 2rem 5%;
+  }
+  @media (max-width: 991px) {
+    padding: 2rem;
+  }
+  @media (max-width: 450px) {
+    font-size: 3rem;
+  }
 
   .logo {
     @include titleText(2.5rem);
@@ -20,6 +29,22 @@
 
   .navbar {
     position: relative;
+    @media (max-width: 768px) {
+      position: fixed;
+      top: 0;
+      right: -105%;
+      width: 30rem;
+      background: $white;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      z-index: 1200;
+      &.active {
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+        right: 0;
+      }
+    }
 
     #close-navbar {
       position: absolute;
@@ -32,6 +57,9 @@
       &:hover {
         transform: rotate(90deg);
       }
+      @media (max-width: 768px) {
+        display: block;
+      }
     }
 
     a {
@@ -39,6 +67,12 @@
       @include titleText(2rem);
       &:hover {
         color: $green;
+      }
+      @media (max-width: 768px) {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
       }
     }
   }
@@ -55,5 +89,8 @@
 
   #menu-btn {
     display: none;
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
   }
 }
