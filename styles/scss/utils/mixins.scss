@@ -2,7 +2,7 @@
 
 @mixin grid($value) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($value));
+  grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
   gap: 2rem;
 }
 
