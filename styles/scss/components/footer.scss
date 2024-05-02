@@ -1,0 +1,28 @@
+.footer {
+  background: $light-green;
+  .box-container {
+    @include grid(25rem);
+    .box {
+      h3 {
+        @include titleText(2.2rem);
+        padding: 1rem 0;
+        i {
+          color: $green;
+        }
+      }
+      .shere {
+        margin-top: 1rem;
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background-color: $green;
+          color: $white;
+          margin-right: 0.3rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
