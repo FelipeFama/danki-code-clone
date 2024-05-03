@@ -1,0 +1,32 @@
+.subjects {
+  .box-container {
+    @include grid(16rem);
+    .box {
+      padding: 3rem 2rem;
+      text-align: center;
+      border: $border;
+      background: $light-green;
+      cursor: pointer;
+      &:hover {
+        background: $green;
+        h3 {
+          color: $white;
+        }
+        p {
+          color: $light-color;
+        }
+      }
+      img {
+        height: 10rem;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        @include titleText(2rem);
+        padding: 0.5rem 0;
+      }
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
