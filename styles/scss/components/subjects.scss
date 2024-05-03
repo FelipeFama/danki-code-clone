@@ -9,7 +9,7 @@
       cursor: pointer;
       &:hover {
         background: $green;
-        h3 {
+        h2 {
           color: $white;
         }
         p {
@@ -20,7 +20,7 @@
         height: 10rem;
         margin-bottom: 0.5rem;
       }
-      h3 {
+      h2 {
         @include titleText(2rem);
         padding: 0.5rem 0;
       }
