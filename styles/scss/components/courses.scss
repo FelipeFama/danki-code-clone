@@ -1,0 +1,42 @@
+.home-courses {
+  .slide {
+    text-align: center;
+    position: relative;
+    background: $light-green;
+    overflow: hidden;
+    &:hover .content {
+      bottom: 0;
+    }
+    .image {
+      padding: 2rem;
+      overflow: hidden;
+      img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+      h2 {
+        @include titleText(2rem);
+      }
+    }
+    .content {
+      position: absolute;
+      bottom: -100%;
+      right: 0;
+      left: 0;
+      background: $green;
+      padding: 2rem 3rem;
+      h3 {
+        @include titleText(2rem);
+        color: $white;
+      }
+      p {
+        padding: 1rem 0;
+        @include graphText(1.5rem);
+        color: $light-color;
+      }
+      .btn:hover {
+        background: $black;
+      }
+    }
+  }
+}
