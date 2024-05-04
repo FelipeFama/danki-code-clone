@@ -29,6 +29,10 @@ html {
   }
 }
 
+img {
+  user-select: none;
+}
+
 section,
 footer {
   padding: 5rem 10%;
