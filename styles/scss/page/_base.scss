@@ -38,6 +38,25 @@ footer {
   padding: 5rem 10%;
 }
 
+.heading-link {
+  text-align: center;
+  background: url(/images/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  h1 {
+    @include titleText(4rem);
+  }
+  p {
+    @include graphText(2rem);
+    a {
+      color: $green;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .heading {
   text-align: center;
   margin-bottom: 3rem;
