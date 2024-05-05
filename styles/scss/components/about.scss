@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  .images {
+    flex: 1 1 40rem;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    flex: 1 1 40rem;
+    .about-title {
+      @include titleText(3rem);
+    }
+    p {
+      @include graphText(1.5rem);
+      padding: 1rem 0;
+    }
+    .icons-container {
+      margin-top: 1rem;
+      @include grid(16rem);
+      .icons {
+        text-align: center;
+        border: $border;
+        background: $light-green;
+        padding: 3rem 2rem;
+        img {
+          height: 5rem;
+          margin-bottom: 0.5rem;
+        }
+        h3 {
+          padding: 0.5rem 0;
+          @include titleText(3rem);
+        }
+        span {
+          @include graphText(1.5rem);
+        }
+      }
+    }
+  }
+}
