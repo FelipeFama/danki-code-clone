@@ -2,6 +2,12 @@
   .box-container {
     @include grid(30rem);
     .box {
+      &:hover .image img {
+        transform: scale(1.1);
+      }
+      &.hide {
+        display: none;
+      }
       .image {
         height: 25rem;
         overflow: hidden;
@@ -48,5 +54,9 @@
         }
       }
     }
+  }
+  .load-more {
+    margin-top: 2rem;
+    text-align: center;
   }
 }
