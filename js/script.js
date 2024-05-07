@@ -8,6 +8,7 @@ document.querySelector("#close-navbar").onclick = () => {
   navbar.classList.remove("active");
 };
 
+// Account Form
 let registerBtn = document.querySelector(".account-form .register-btn");
 let loginBtn = document.querySelector(".account-form .login-btn");
 
@@ -41,7 +42,7 @@ document.querySelector("#close-form").onclick = () => {
   accountForm.classList.remove("active");
 };
 
-/* load more */
+// Load-more
 if (window.location.href.includes("courses")) {
   document.querySelector(".load-more .btn").onclick = () => {
     document
@@ -53,6 +54,7 @@ if (window.location.href.includes("courses")) {
   };
 }
 
+// Swiper-js
 let swiper = new Swiper(".home-slider", {
   pagination: {
     el: ".swiper-pagination",
