@@ -89,6 +89,10 @@ let swiper = new Swiper(".home-slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   loop: true,
   grabCursor: true,
 });
@@ -97,6 +101,10 @@ let swiperCourses = new Swiper(".home-courses-slider", {
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -106,6 +114,9 @@ let swiperCourses = new Swiper(".home-courses-slider", {
     },
     991: {
       slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
     },
   },
 });
@@ -114,6 +125,10 @@ let swiperTeachers = new Swiper(".teachers-slider", {
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -123,6 +138,9 @@ let swiperTeachers = new Swiper(".teachers-slider", {
     },
     991: {
       slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
     },
   },
 });
@@ -131,6 +149,10 @@ let swiperReviews = new Swiper(".reviews-slider", {
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -141,6 +163,9 @@ let swiperReviews = new Swiper(".reviews-slider", {
     991: {
       slidesPerView: 3,
     },
+    1200: {
+      slidesPerView: 4,
+    },
   },
 });
 
@@ -148,6 +173,10 @@ let swiperLogo = new Swiper(".logo-slider", {
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -162,7 +191,7 @@ let swiperLogo = new Swiper(".logo-slider", {
       slidesPerView: 4,
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 4,
     },
   },
 });
