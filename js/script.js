@@ -78,8 +78,6 @@ function loadingPage() {
     window.location.href.includes("/")
   ) {
     loading.classList.add("active");
-  } else {
-    loading.classList.remove("active");
   }
 }
 
