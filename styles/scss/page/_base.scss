@@ -12,21 +12,7 @@
 }
 
 html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-
-  &::-webkit-scrollbar {
-    width: 1rem;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $green;
-    border-radius: 0.3rem;
-  }
+  @include html;
 }
 
 img {
@@ -35,7 +21,7 @@ img {
 
 section,
 footer {
-  padding: 5rem 10%;
+  @include section;
 }
 
 .heading-link {

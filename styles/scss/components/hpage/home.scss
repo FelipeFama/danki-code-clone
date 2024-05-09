@@ -19,6 +19,11 @@
       padding: 1rem 0;
     }
   }
+  @media (max-width: 768px) {
+    .slide .content h3 {
+      font-size: 3rem;
+    }
+  }
 }
 
 .swiper-pagination-bullet-active {
