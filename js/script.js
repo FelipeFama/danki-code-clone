@@ -74,8 +74,8 @@ let loading = document.querySelector("#loading-page");
 
 function loadingPage() {
   if (window.location.href.includes("home")) {
+    loading.classList.add("active");
   }
-  loading.classList.add("active");
 }
 
 function fadeOut() {
