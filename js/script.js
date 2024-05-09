@@ -54,6 +54,21 @@ if (window.location.href.includes("courses")) {
   };
 }
 
+// Accordion
+let accordion = document.querySelectorAll(
+  ".faq .accordion-container .accordion"
+);
+
+accordion.forEach((item) => {
+  item.onclick = () => {
+    const isActive = item.classList.contains("active");
+    accordion.forEach((accor) => accor.classList.remove("active"));
+    if (!isActive) {
+      item.classList.add("active");
+    }
+  };
+});
+
 // Swiper-js
 let swiper = new Swiper(".home-slider", {
   pagination: {
