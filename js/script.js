@@ -73,10 +73,7 @@ accordion.forEach((item) => {
 let loading = document.querySelector("#loading-page");
 
 function loadingPage() {
-  if (
-    window.location.href.includes("home") ||
-    window.location.href.includes("/")
-  ) {
+  if (window.location.href.includes("home")) {
     loading.classList.add("active");
   }
 }
