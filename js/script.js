@@ -79,7 +79,7 @@ function loadingPage() {
 }
 
 function fadeOut() {
-  setInterval(loadingPage, 3000);
+setInterval(loadingPage(), 3000);
 }
 
 window.onload = fadeOut();
