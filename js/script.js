@@ -79,9 +79,12 @@ function loadingPage() {
 function fadeOut() {
   setInterval(loadingPage, 3000);
 }
+/*
 if (window.location.href.includes("home")) {
-  window.onload = fadeOut();
 }
+*/
+window.onload = fadeOut();
+
 
 // Swiper-js
 let swiper = new Swiper(".home-slider", {
