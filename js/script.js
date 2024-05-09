@@ -77,9 +77,7 @@ function loadingPage() {
 }
 
 function fadeOut() {
-  if (window.location.href.includes("home.html")) {
-    setInterval(loadingPage, 3000);
-  }
+  setInterval(loadingPage, 2000);
 }
 
 window.onload = fadeOut();
