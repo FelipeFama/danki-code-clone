@@ -1,4 +1,4 @@
-# Real State Website
+# Multipage Education Website
 
 <table>
   <tr>
@@ -23,7 +23,7 @@
 ![SwiperJS](https://img.shields.io/badge/Swiper-262931?style=for-the-badge&logo=swiper&logoColor=0080FF)
 
 ## :rocket: Project Information
-- Real state website responsive
+- Multipage education website responsive
 - Semantic HTML5 markup
 - CSS custom properties
 - Grid and Flex
